@@ -1,0 +1,43 @@
+module.exports = { 
+ //param A : array of strings
+ //return an integer
+ evalRPN : function(A){
+      var stackNum = [];
+      var stackOp = [];
+      stackNum.push((A[0]));
+      A.forEach(function(element, index){
+         var index = 0;
+         var result;
+         while(element!== "+" || element!== "-" || element!== "/" || element!== "*") {
+           stackNum.push((element));  
+         } 
+         while(element === "/" || element === "*"){
+             var second = parseInt(A.pop());  
+             var first = parseInt(A.pop());
+            if(element === "/") {
+              result = first/second;
+             } else {
+              result = first*second;  
+            }  
+            stackNum.push(result);
+            
+         }
+          while(element === "+" || element === "-"){
+           stackOp.push(element);
+         }
+      }); 
+      while(stackNum.length !== 1) {
+         var second = parseInt(stackNum.pop());  
+         var first = parseInt(stackNum.pop()); 
+         var op = stackOp.pop();
+         if(op === "+") {
+             second = second + first;
+         } else {
+             second = first - second;
+         }
+         stackNum.push(second);
+      }
+      return stackNum.pop();
+      
+ }
+};
