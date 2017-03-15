@@ -1,12 +1,4 @@
 
-/*--- just to check if tree is correct --- */
-function inorder(node){
-   if(node){
-      inorder(node.left);
-      console.log(node.data);
-      inorder(node.right);
-   }
-}
 
 function TreeNode(data){
    this.data = data
