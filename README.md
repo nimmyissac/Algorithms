@@ -1,4 +1,4 @@
 # Algorithms
-LinkedLists (./InterviewBits/LinkedLists)
-
-- InsertionSort Linkedlist without extra space (./InterviewBits/LinkedLists/insertionSortLinkedList.js)
+ 
+[LinkedLists](https://github.com/nimmyissac/Algorithms/tree/master/InterviewBits/LinkedList)
+- [InsertionSort Linkedlist without extra space] (https://github.com/nimmyissac/Algorithms/blob/master/InterviewBits/LinkedList/insertionSortLinkedList.js)
