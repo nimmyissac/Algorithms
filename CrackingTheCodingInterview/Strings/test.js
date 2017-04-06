@@ -1,1 +1,0 @@
-function (data){     console.log(data.response); // "Aw yeah, now we're JSONPartying"     console.log(data.random); // 3558    ({"response":"Aw yeah, now we're JSONPartying","spirit_animal":"rainbow liger","timestamp":"2017-01-11T17:57:27.522Z","random":5798})
